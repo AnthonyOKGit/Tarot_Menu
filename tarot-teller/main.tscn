@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cv3odju2r44h8"]
+
+[sub_resource type="Gradient" id="Gradient_wtjmy"]
+colors = PackedColorArray(0.139191, 0.119429, 0.157684, 1, 0.29, 0.286665, 0.2813, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_m625n"]
+gradient = SubResource("Gradient_wtjmy")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_top = 648.0
+offset_right = 648.0
+offset_bottom = 1800.0
+rotation = -1.5708
+texture = SubResource("GradientTexture1D_m625n")
